@@ -46,7 +46,7 @@ const config = defineConfig({
         alias: {
             "@": path.resolve("./"),
             "@src": path.resolve("src/"),
-            "@idc": path.resolve("src/"),
+            "@us": path.resolve("src/"),
             "@unite": path.resolve("unite/"),
             "@assets": path.resolve("assets/")
         },

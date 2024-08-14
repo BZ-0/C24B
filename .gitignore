@@ -231,3 +231,13 @@ PRIVATE.json5
 /PRIVATE.json5
 */PRIVATE.json
 */PRIVATE.json5
+
+.git
+.git/*
+.git/
+./.git
+./.git/*
+./.git/
+/.git
+/.git/*
+/.git/

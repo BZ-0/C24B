@@ -1,0 +1,47 @@
+@layer us-header {
+    
+    header {
+        
+        display: flex;
+        text-align: center;
+        place-items: center;
+        place-content: center;
+        flex-direction: column;
+
+        padding-inline: 2rem;
+        padding-block: 2rem;
+        gap: 2rem;
+        
+        //
+        h1 {
+            font-size: 2rem;
+            margin: 0px;
+        }
+
+        //
+        h3 {
+            font-size: 1rem;
+            margin: 0px;
+        }
+
+        //
+        button {
+            color: white !important;
+            background-color: #20A0DA !important;
+            display: flex;
+            text-align: center;
+            place-items: center;
+            place-content: center;
+
+            inline-size: max-content;
+            block-size: max-content;
+            container-type: normal;
+
+            line-height: 1.5;
+            padding: 0.5rem;
+
+            border-radius: 0.5rem;
+        }
+    }
+
+}

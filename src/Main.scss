@@ -1,0 +1,43 @@
+@use "@unite/scss/Bundle";
+@use "@us/SCSS/Misc";
+@use "@us/SCSS/Cards";
+@use "@us/SCSS/Main";
+@use "@us/SCSS/Navbar";
+@use "@us/SCSS/Header";
+
+//
+@layer us-website {
+
+    //
+    body {
+        background-color: #FAFEFF !important;
+        color: black !important;
+    }
+
+    //
+    .content {
+        background-color: transparent;
+
+        //
+        inline-size: 100dvi;
+        block-size: 100dvb;
+        max-inline-size: 100dvi;
+        max-block-size: 100dvb;
+        min-block-size: max-content;
+
+        //
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+
+        //
+        overflow: auto;
+
+        //
+        :where(*) {
+            background-color: transparent;
+            color: black;
+        }
+    }
+
+}
