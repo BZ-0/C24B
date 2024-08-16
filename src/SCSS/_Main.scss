@@ -5,7 +5,7 @@
         --right-space: 4rem;
 
         position: relative;
-        inline-size: min(calc(100% - var(--right-space)), 80rem);
+        inline-size: min(calc(100% - var(--right-space)), 40rem);
         block-size: max-content;
 
         display: flex;
@@ -23,10 +23,12 @@
 
         margin-inline-end: var(--right-space);
 
-        background-color: #eff7ff !important;
-
         border-start-end-radius: 1rem;
         border-end-end-radius: 1rem;
+
+        h1 {
+            font-size: 3rem;
+        }
 
         .info-block {
             gap: 0.25rem;

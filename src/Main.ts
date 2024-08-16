@@ -1,5 +1,6 @@
 // Initiate loading instantly
 import { observeAttribute } from "@unite/scripts/dom/Observer.ts";
+import { updateStyleRule } from "@unite/scripts/stylework/ColorTheme.ts";
 
 //
 const preInit = Promise.allSettled([
@@ -28,6 +29,9 @@ preInit.then(async ()=>{
         const lazy = mod?.value?.default;
         if (typeof lazy == "function") { lazy?.(); };
     });
+
+    //
+    updateStyleRule("#1060A0", false);
 
     //
     const {createApp} = await import("vue");

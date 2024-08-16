@@ -8,10 +8,24 @@
 //
 @layer us-website {
 
-    //
     body {
-        background-color: #FAFEFF !important;
-        color: black !important;
+        background-color: var(--current-surface-color) !important;
+        color: var(--current-glyph-color) !important;
+
+        background-image: url("./assets/wallpaper/1.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .subscript {
+        opacity: 0.8;
+    }
+
+    //
+    a, button, a button {
+        text-decoration: none;
     }
 
     //
@@ -33,11 +47,12 @@
         //
         overflow: auto;
 
+        gap: 6rem;
+
         //
-        :where(*) {
-            background-color: transparent;
-            color: black;
-        }
+        //:where(*) {
+            //background-color: transparent;
+        //}
     }
 
 }

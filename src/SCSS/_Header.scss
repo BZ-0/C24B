@@ -1,7 +1,6 @@
 @layer us-header {
-    
+
     header {
-        
         display: flex;
         text-align: center;
         place-items: center;
@@ -10,24 +9,27 @@
 
         padding-inline: 2rem;
         padding-block: 2rem;
-        gap: 2rem;
-        
+        gap: 1rem;
+        font-size: 1rem;
+        font-weight: 100;
+
         //
         h1 {
-            font-size: 2rem;
+            font-size: 4rem;
             margin: 0px;
+            padding: 0px;
         }
 
         //
         h3 {
-            font-size: 1rem;
             margin: 0px;
+            padding: 0px;
         }
 
         //
         button {
-            color: white !important;
-            background-color: #20A0DA !important;
+            margin-block-start: 1rem;
+
             display: flex;
             text-align: center;
             place-items: center;
@@ -37,10 +39,12 @@
             block-size: max-content;
             container-type: normal;
 
+            font-size: 1rem;
             line-height: 1.5;
-            padding: 0.5rem;
+            padding: 1rem;
 
             border-radius: 0.5rem;
+            font-weight: bolder;
         }
     }
 

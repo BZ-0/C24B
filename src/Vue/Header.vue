@@ -6,11 +6,11 @@
 <template>
     <header>
 
-        <h1>Project "Vista"</h1>
+        <h1>IDC-L2</h1>
 
-        <h3>New-gen OS-like web-system</h3>
+        <h3 class="subscript">It's your new tab page</h3>
 
-        <button>Getting Started</button>
+        <a href="https://app.c24b.ru/"><button data-scheme="inverse" type="button" data-highlight-hover="1">Run Application</button></a>
 
     </header>
 </template>

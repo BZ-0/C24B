@@ -13,7 +13,11 @@
         padding-block: 1rem;
 
         font-size: 1.25rem;
-        background-color: #E0F0FF !important;
+
+        position: sticky;
+        inset: 0px;
+        inset-block-end: auto;
+        z-index: 9999;
 
         //
         .logo {

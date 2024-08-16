@@ -4,14 +4,14 @@
 </script>
 
 <template>
-    <main>
+    <main data-scheme="solid" data-highlight="1">
 
         <div class="info-block">
-            <h1>New Frontier</h1>
-            <div class="subscript">Sorts of sheets</div>
+            <h1>Next Generation PWA</h1>
+            <div class="subscript"><a href="#">Learn More</a></div>
             <div class="space"></div>
 
-            <div class="description">Become member of 2024...</div>
+            <div class="description">Made by Vue.JS and latest web technologies</div>
         </div>
 
     </main>
