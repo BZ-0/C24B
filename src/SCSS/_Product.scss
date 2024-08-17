@@ -4,8 +4,10 @@
     #products {
         display: flex;
 
+        flex-flow: wrap;
         flex-direction: row;
         flex-wrap: wrap;
+
         gap: 2rem;
         padding: min(4rem, 2cqi);
 
@@ -13,6 +15,11 @@
         place-items: center;
 
         justify-content: space-evenly;
+
+        h2 {
+            place-self: center;
+            text-align: center;
+        }
 
         //
         & > :where(*) {
