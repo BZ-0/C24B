@@ -4,19 +4,25 @@
     .cards {
         position: relative;
 
+        //
         display: flex;
-        padding: 2rem;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 3rem;
+        gap: 1px;
 
+        //
         place-content: center;
         place-items: center;
+        inline-size: 80%;
+        block-size: max-content;
 
         //
         & > :where(*) {
+            padding: 1rem;
+
             inline-size: max-content;
-            max-inline-size: 90%;
+            max-inline-size: 100%;
+            flex-grow: 1;
             flex-basis: 20rem;
             gap: 1rem;
 
@@ -26,6 +32,15 @@
             place-content: center;
             place-items: center;
             text-align: start;
+
+            block-size: 100%;
+        }
+
+        .card {
+            div {
+                opacity: 0.8;
+                font-weight: 400;
+            }
         }
     }
 

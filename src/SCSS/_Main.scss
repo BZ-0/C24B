@@ -5,8 +5,11 @@
         --right-space: 4rem;
 
         position: relative;
+        min-inline-size: max-content;
         inline-size: min(calc(100% - var(--right-space)), 40rem);
         block-size: max-content;
+
+        box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.1);
 
         display: flex;
         place-items: center;

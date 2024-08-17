@@ -14,11 +14,25 @@
         place-content: center;
         place-items: center;
 
-        justify-content: space-evenly;
+        //justify-content: space-evenly;
 
-        h2 {
+        min-block-size: max-content;
+
+        h3, h2 {
+            display: flex;
             place-self: center;
             text-align: center;
+            inline-size: max-content;
+            block-size: max-content;
+
+            place-items: center;
+            place-content: center;
+
+            .icon-wrap {
+                margin-inline: 1rem;
+                inline-size: 0.6em;
+                block-size: 0.6em;
+            }
         }
 
         //
@@ -29,6 +43,20 @@
 
             border-radius: 1rem;
             inline-size: max-content;
+        }
+
+        .word {
+            font-size: 2rem;
+            place-content: center;
+            place-items: center;
+            display: flex;
+            flex-grow: 0;
+            flex-shrink: 1;
+            inline-size: max-content;
+            max-inline-size: max-content;
+            font-weight: bolder;
+
+            opacity: 0.8;
         }
     }
 

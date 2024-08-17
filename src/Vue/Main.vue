@@ -1,6 +1,5 @@
-
 <script setup>
-
+    import LucideIcon from "./WLucideIcon.vue";
 </script>
 
 <template>
@@ -14,7 +13,7 @@
 
             <div class="space"></div>
 
-            <a href="#products"><button data-scheme="inverse" type="button" data-highlight-hover="1">See Products</button></a>
+            <a href="#products"><button data-scheme="inverse" type="button" data-highlight-hover="1"><LucideIcon name="book-marked"/>Documentation<LucideIcon name="book-marked"/></button></a>
 
         </div>
 
