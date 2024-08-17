@@ -33,6 +33,14 @@
         border-start-end-radius: 1rem;
         border-end-end-radius: 1rem;
 
+        h1, h2, h3, h4, h5, h6 {
+            justify-content: start;
+            .icon-wrap {
+                inline-size: 0.6em;
+                block-size: 0.6em;
+            }
+        }
+
         .info-block {
             gap: 0.25rem;
 

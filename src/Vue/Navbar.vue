@@ -12,9 +12,9 @@
         <div class="space"></div>
 
         <ul>
-            <li><a href="#">Main</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
+            <li><a href="#main">Main</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
         </ul>
     </nav>
 </template>
