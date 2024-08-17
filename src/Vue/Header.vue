@@ -4,14 +4,15 @@
 </script>
 
 <template>
-    <header>
+    <header data-transparent>
 
-        <h1>IDC-L2</h1>
+        <h1 data-transparent>C24 Prospect</h1>
 
-        <h3 class="subscript">It's your new tab page</h3>
+        <h6 data-transparent class="subscript">It's your new tab page</h6>
 
-        <a href="https://app.c24b.ru/"><button data-scheme="inverse" type="button" data-highlight-hover="1">Run Application</button></a>
+        <div class="pad"></div>
+
+        <a href="#products"><button data-scheme="inverse" type="button" data-highlight-hover="1">See Products</button></a>
 
     </header>
 </template>
-

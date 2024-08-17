@@ -1,58 +1,9 @@
 @use "@unite/scss/Bundle";
+@use "@us/General";
 @use "@us/SCSS/Misc";
 @use "@us/SCSS/Cards";
 @use "@us/SCSS/Main";
 @use "@us/SCSS/Navbar";
 @use "@us/SCSS/Header";
-
-//
-@layer us-website {
-
-    body {
-        background-color: var(--current-surface-color) !important;
-        color: var(--current-glyph-color) !important;
-
-        background-image: url("./assets/wallpaper/1.jpg");
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .subscript {
-        opacity: 0.8;
-    }
-
-    //
-    a, button, a button {
-        text-decoration: none;
-    }
-
-    //
-    .content {
-        background-color: transparent;
-
-        //
-        inline-size: 100dvi;
-        block-size: 100dvb;
-        max-inline-size: 100dvi;
-        max-block-size: 100dvb;
-        min-block-size: max-content;
-
-        //
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-
-        //
-        overflow: auto;
-
-        gap: 6rem;
-
-        //
-        //:where(*) {
-            //background-color: transparent;
-        //}
-    }
-
-}
+@use "@us/SCSS/Product";
+@use "@us/SCSS/Footer";

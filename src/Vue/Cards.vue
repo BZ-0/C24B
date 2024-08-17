@@ -8,15 +8,15 @@
     <div class="cards">
 
         <div class="card">
-            <h3>Featured Project</h3>
+            <h6>Featured Project</h6>
         </div>
 
         <div class="card">
-            <h3>Most Detailed</h3>
+            <h6>Most Detailed</h6>
         </div>
 
         <div class="card">
-            <h3>Last Standards</h3>
+            <h6>Last Standards</h6>
         </div>
 
     </div>

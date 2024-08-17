@@ -1,0 +1,21 @@
+@layer us-products {
+
+    //
+    #products {
+        display: flex;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        //
+        & > :where(*) {
+            flex-basis: 40%;
+            max-inline-size: 40%;
+            flex-grow: 1;
+
+            border-radius: 1rem;
+        }
+    }
+
+}

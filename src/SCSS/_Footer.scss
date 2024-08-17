@@ -1,0 +1,12 @@
+@layer us-footer {
+
+    footer {
+        inline-size: 100%;
+        min-block-size: 4rem;
+        block-size: max-content;
+
+        padding: 4rem;
+        padding-inline: 10rem;
+    }
+
+}

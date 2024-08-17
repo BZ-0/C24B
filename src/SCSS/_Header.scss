@@ -1,6 +1,15 @@
 @layer us-header {
 
+    //
     header {
+        display: flex;
+        margin: 0px;
+        min-block-size: 100dvb;
+        justify-self: end;
+    }
+
+    //
+    header, article {
         display: flex;
         text-align: center;
         place-items: center;
@@ -9,43 +18,14 @@
 
         padding-inline: 2rem;
         padding-block: 2rem;
-        gap: 1rem;
+        gap: 0.5rem;
         font-size: 1rem;
-        font-weight: 100;
+        //font-weight: 100;
 
-        //
-        h1 {
-            font-size: 4rem;
-            margin: 0px;
-            padding: 0px;
-        }
+        padding: 2rem;
+        flex-grow: 1;
 
-        //
-        h3 {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        //
-        button {
-            margin-block-start: 1rem;
-
-            display: flex;
-            text-align: center;
-            place-items: center;
-            place-content: center;
-
-            inline-size: max-content;
-            block-size: max-content;
-            container-type: normal;
-
-            font-size: 1rem;
-            line-height: 1.5;
-            padding: 1rem;
-
-            border-radius: 0.5rem;
-            font-weight: bolder;
-        }
+        inline-size: 100cqi;
     }
 
 }

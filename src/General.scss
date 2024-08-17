@@ -1,0 +1,152 @@
+//
+@layer us-website {
+
+    body {
+        background-color: var(--current-surface-color) !important;
+        color: var(--current-glyph-color) !important;
+
+        //
+        background-image: url("./assets/wallpaper/1.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        //
+        container-type: size;
+        contain: content;
+        overflow: scroll;
+
+        inline-size: 100dvi;
+        block-size: 100dvb;
+        max-block-size: 100dvb;
+        max-inline-size: 100dvi;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0px;
+        padding: 0px;
+        background-color: transparent;
+    }
+
+    //
+    h1 {
+        font-size: 4rem;
+    }
+
+    //
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    //
+    h3 {
+        font-size: 3rem;
+    }
+
+    //
+    h4 {
+        font-size: 2.5rem;
+    }
+
+    //
+    h5 {
+        font-size: 2rem;
+    }
+
+    //
+    h6 {
+        font-size: 1.5rem;
+    }
+
+
+    //
+    .subscript {
+        opacity: 0.8;
+        font-weight: 100;
+    }
+
+    //
+    a, button, a button {
+        text-decoration: none;
+    }
+
+    //
+    .content, .background {
+        overflow: visible;
+
+        //
+        display: flex;
+        flex-direction: column;
+
+        place-content: center;
+        place-items: center;
+
+        justify-content: start;
+
+        //
+        & > :where(*) {
+            flex-grow: 1;
+            inline-size: 100%;
+            place-content: center;
+            place-items: center;
+        }
+    }
+
+    .pad {
+        block-size: 1rem;
+        background-color: transparent;
+    }
+
+    //
+    .background {
+        inline-size: calc(100% - 4rem);
+        min-block-size: max-content;
+        padding-block: 6rem;
+        gap: 6rem;
+
+        //
+        margin-block-start: 10rem;
+        margin-inline: 2rem;
+        border-radius: 2rem;
+    }
+
+    .content {
+        inline-size: 100dvi;
+        block-size: 100dvb;
+        max-inline-size: 100dvi;
+        min-block-size: 100dvb;
+        min-inline-size: 100%;
+
+        //
+        position: fixed;
+        inset: 0px;
+        gap: 2rem;
+
+        //
+        background-color: transparent;
+    }
+
+    //
+    button {
+        margin-block-start: 1rem;
+
+        display: flex;
+        text-align: center;
+        place-items: center;
+        place-content: center;
+
+        inline-size: max-content;
+        block-size: max-content;
+        container-type: normal;
+
+        font-size: 1rem;
+        line-height: 1.5;
+        padding-inline: 1rem;
+        padding-block: 0.8rem;
+
+        border-radius: 0.5rem;
+        font-weight: bolder;
+    }
+
+}

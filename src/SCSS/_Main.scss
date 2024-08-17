@@ -16,19 +16,19 @@
         //
         text-align: start;
         justify-content: end;
+        //justify-items: end;
 
+        align-self: start;
+
+        //
         padding-inline: 2rem;
-        padding-block: 2rem;
+        padding-block: 4rem;
         padding-inline-end: 4rem;
 
         margin-inline-end: var(--right-space);
 
         border-start-end-radius: 1rem;
         border-end-end-radius: 1rem;
-
-        h1 {
-            font-size: 3rem;
-        }
 
         .info-block {
             gap: 0.25rem;
@@ -42,7 +42,13 @@
             flex-direction: column;
 
             min-inline-size: max-content;
-            min-block-size: max-content;
+
+            align-content: space-between;
+            min-block-size: 16rem;
+        }
+
+        button {
+            justify-self: end;
         }
     }
 

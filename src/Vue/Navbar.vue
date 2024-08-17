@@ -14,6 +14,7 @@
         <ul>
             <li><a href="#">Main</a></li>
             <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
         </ul>
     </nav>
 </template>
