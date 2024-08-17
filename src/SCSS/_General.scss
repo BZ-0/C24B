@@ -13,6 +13,7 @@
         background-repeat: no-repeat;
 
         //
+        position: absolute;
         container-type: size;
         contain: content;
         overflow: auto;
@@ -26,6 +27,15 @@
         //
         scrollbar-gutter: stable both-edges;
         scrollbar-width: none;
+        scroll-behavior: smooth;
+
+        //
+        touch-action: manipulation !important;
+
+        //
+        :where(*) {
+            touch-action: manipulation;
+        }
     }
 
     //
@@ -89,6 +99,7 @@
         place-items: center;
 
         justify-content: start;
+        pointer-events: auto;
 
         //
         & > :where(*) {
@@ -118,6 +129,7 @@
     .background {
         --margin: min(2rem, 4cqi);
 
+        //
         inline-size: calc(100% - 2 * var(--margin));
         min-block-size: max-content;
         padding-block: 6rem;
@@ -143,7 +155,7 @@
         min-inline-size: 100%;
 
         //
-        position: fixed;
+        position: absolute;
         inset: 0px;
         gap: 2rem;
 

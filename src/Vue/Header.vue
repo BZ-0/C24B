@@ -5,7 +5,7 @@
 <template>
     <header data-transparent>
 
-        <h1 data-transparent> C24 Block </h1>
+        <h1 data-transparent> C24 Box </h1>
 
         <h6 data-transparent class="subscript">It's your new tab page</h6>
 

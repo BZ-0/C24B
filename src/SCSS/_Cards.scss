@@ -17,6 +17,10 @@
         block-size: max-content;
 
         //
+        align-items: stretch;
+        align-content: stretch;
+
+        //
         & > :where(*) {
             padding: 1rem;
 
@@ -32,10 +36,20 @@
             place-content: center;
             place-items: center;
             text-align: start;
+            align-self: stretch;
 
+            //
+            min-block-size: max-content;
             block-size: 100%;
+            max-block-size: none;
+
+            //
+            block-size: stretch;
+            block-size: -webkit-fill-available;
+            block-size: -moz-available;
         }
 
+        //
         .card {
             div {
                 opacity: 0.8;
