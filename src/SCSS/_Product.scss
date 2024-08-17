@@ -51,8 +51,8 @@
             border-radius: 1rem;
             inline-size: max-content;
 
-            flex-basis: 30rem;
-            min-inline-size: 30rem;
+            flex-basis: min(30rem, 100%);
+            min-inline-size: min(30rem, 100%);
 
             place-self: center;
         }
