@@ -2,11 +2,11 @@
 
     footer {
         inline-size: 100%;
-        min-block-size: 4rem;
+        min-block-size: 6rem;
         block-size: max-content;
 
-        padding: 4rem;
-        padding-inline: 10rem;
+        padding: 2rem;
+        padding-inline: min(6rem, 10cqi);
     }
 
 }

@@ -7,14 +7,21 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 2rem;
+        padding: min(4rem, 2cqi);
+
+        place-content: center;
+        place-items: center;
+
+        justify-content: space-evenly;
 
         //
         & > :where(*) {
-            flex-basis: 40%;
-            max-inline-size: 40%;
-            flex-grow: 1;
+            flex-basis: 30rem;
+            max-inline-size: 90%;
+            flex-grow: 0;
 
             border-radius: 1rem;
+            inline-size: max-content;
         }
     }
 

@@ -6,7 +6,7 @@
         color: var(--current-glyph-color) !important;
 
         //
-        background-image: url("./assets/wallpaper/1.jpg");
+        background-image: url("@assets/wallpaper/1.jpg");
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
@@ -100,14 +100,16 @@
 
     //
     .background {
-        inline-size: calc(100% - 4rem);
+        --margin: min(2rem, 4cqi);
+
+        inline-size: calc(100% - 2 * var(--margin));
         min-block-size: max-content;
         padding-block: 6rem;
         gap: 6rem;
 
         //
         margin-block-start: 10rem;
-        margin-inline: 2rem;
+        margin-inline: var(--margin);
         border-radius: 2rem;
     }
 
@@ -148,5 +150,14 @@
         border-radius: 0.5rem;
         font-weight: bolder;
     }
+
+    //
+    /*.v-line {
+        block-size: 100%;
+        inline-size: 1px;
+        flex-basis: 1px;
+        flex-grow: 0;
+        opacity: 0.6;
+    }*/
 
 }
