@@ -6,6 +6,7 @@
     import Cards from "@us/Vue/Cards.vue"
     import Product from "@us/Vue/Product.vue"
     import Footer from "@us/Vue/Footer.vue"
+    import LucideIcon from "@us/Vue/WLucideIcon.vue";
 
 </script>
 
@@ -19,7 +20,11 @@
         <Main></Main>
 
         <div class="background" data-scheme="solid">
+            <h4 id="products"><LucideIcon name="boxes"/> Our Products <LucideIcon name="boxes"/></h4>
+
             <Product></Product>
+
+            <div class="space"></div>
             <Cards></Cards>
         </div>
 

@@ -3,11 +3,7 @@
 </script>
 
 <template>
-    <section id="products" data-transparent>
-
-        <h4><LucideIcon name="apple"/> Our Products <LucideIcon name="apple"/></h4>
-
-        <div class="break"></div>
+    <section class="products" data-transparent>
 
         <article id="idc-l2" data-scheme="solid" data-highlight="1">
             <h3><LucideIcon name="crown"/> IDC-L2 <LucideIcon name="crown"/></h3>

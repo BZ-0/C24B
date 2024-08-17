@@ -1,23 +1,31 @@
 @layer us-products {
 
     //
-    #products {
+    .products {
         display: flex;
 
-        flex-flow: wrap;
+        //
         flex-direction: row;
         flex-wrap: wrap;
 
-        gap: 2rem;
+        gap: 4rem;
         padding: min(4rem, 2cqi);
 
         place-content: center;
         place-items: center;
 
-        //justify-content: space-evenly;
+        //justify-content: space-around;
 
         min-block-size: max-content;
+        inline-size: 100%;
 
+        //
+        @container (width < 12in) {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        //
         h3, h2 {
             display: flex;
             place-self: center;
@@ -37,24 +45,29 @@
 
         //
         & > :where(*) {
-            flex-basis: 30rem;
-            max-inline-size: 90%;
+            max-inline-size: 80%;
             flex-grow: 0;
 
             border-radius: 1rem;
             inline-size: max-content;
+
+            flex-basis: 30rem;
+            min-inline-size: 30rem;
+
+            place-self: center;
         }
 
         .word {
+            aspect-ratio: 1 / 1;
+            inline-size: 4rem;
+            block-size: 4rem;
             flex-basis: 4rem;
             font-size: 2rem;
             place-content: center;
             place-items: center;
             display: flex;
-            flex-grow: 0;
-            flex-shrink: 1;
-            inline-size: max-content;
             max-inline-size: max-content;
+            min-inline-size: max-content;
             font-weight: bolder;
 
             opacity: 0.8;

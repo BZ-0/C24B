@@ -202,7 +202,8 @@
         inline-size: calc(100% - 2 * var(--margin));
         min-block-size: max-content;
         padding-block: 6rem;
-        gap: 6rem;
+        padding-inline: 4rem;
+        gap: 2rem;
 
         //
         max-block-size: none;
