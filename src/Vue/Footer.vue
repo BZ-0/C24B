@@ -5,7 +5,7 @@
 
 
 <template>
-    <footer class="footer" data-scheme="inverse">
+    <footer class="footer" data-scheme="solid" data-highlight="3">
 
         Красная Печень
 

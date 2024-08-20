@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <main data-scheme="solid" data-highlight="1">
+    <main data-scheme="accent" data-highlight="1">
 
         <div class="info-block">
             <h4><LucideIcon name="medal"/>Unite.JS<LucideIcon name="medal"/></h4>

@@ -31,7 +31,7 @@ preInit.then(async ()=>{
     });
 
     //
-    updateStyleRule("#1060A0", false);
+    updateStyleRule("#701020", false);
 
     //
     const {createApp} = await import("vue");

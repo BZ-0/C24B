@@ -19,7 +19,7 @@
         <Header></Header>
         <Main></Main>
 
-        <div class="background" data-scheme="solid">
+        <div class="background" data-scheme="solid" data-highlight="2">
             <h4 id="products"><LucideIcon name="boxes"/> Our Products <LucideIcon name="boxes"/></h4>
 
             <Product></Product>

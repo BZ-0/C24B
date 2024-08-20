@@ -5,7 +5,7 @@
 <template>
     <section class="products" data-transparent>
 
-        <article id="idc-l2" data-scheme="solid" data-highlight="1">
+        <article id="idc-l2" data-scheme="solid" data-highlight="3">
             <h3><LucideIcon name="crown"/> IDC-L2 <LucideIcon name="crown"/></h3>
 
             <div class="subscript"><a href="#">Learn More</a></div>
@@ -32,7 +32,7 @@
 
         <div class="word"><LucideIcon name="circle-fading-plus"/></div>
 
-        <article id="idc-cloud" data-scheme="solid" data-highlight="1">
+        <article id="idc-cloud" data-scheme="solid" data-highlight="3">
             <h3><LucideIcon name="server-cog"/> IDC-Cloud <LucideIcon name="server-cog"/></h3>
 
             <div class="subscript"><a href="#">Learn More</a></div>

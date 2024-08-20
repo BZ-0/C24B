@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <nav data-scheme="solid" data-highlight="1">
+    <nav data-scheme="solid" data-highlight="3">
         <a class="logo">
             <span>C24B</span>
         </a>
