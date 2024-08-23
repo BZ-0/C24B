@@ -8,8 +8,8 @@
         min-block-size: u.cqf(6);
         block-size: max-content;
 
-        padding: u.cqf(2);
-        padding-inline: min(u.cqf(6), 10cqi);
+        padding: u.cpx(0.25);
+        padding-inline: u.cpx(0.5);
 
         box-shadow: 0px 0px u.cqf(1) rgba(0, 0, 0, 0.2);
     }

@@ -55,7 +55,7 @@
 
     //
     .buttons {
-        place-self: center;
+        //place-self: center;
         inline-size: max-content;
         max-inline-size: 100%;
 
@@ -125,35 +125,12 @@
     }
 
     //
-    h1 {
-        font-size: u.cqf(4);
-    }
-
-    //
-    h2 {
-        font-size: u.cqf(3.5);
-    }
-
-    //
-    h3 {
-        font-size: u.cqf(3);
-    }
-
-    //
-    h4 {
-        font-size: u.cqf(2.5);
-    }
-
-    //
-    h5 {
-        font-size: u.cqf(2);
-    }
-
-    //
-    h6 {
-        font-size: u.cqf(1.5);
-    }
-
+    h1 { font-size: u.cqf(4);   };
+    h2 { font-size: u.cqf(3.5); };
+    h3 { font-size: u.cqf(3);   };
+    h4 { font-size: u.cqf(2.5); };
+    h5 { font-size: u.cqf(2);   };
+    h6 { font-size: u.cqf(1.5); };
 
     //
     .subscript {
@@ -212,7 +189,7 @@
         min-block-size: max-content;
         padding-block: u.cqf(2);
         padding-block-start: u.cqf(4);
-        padding-inline: u.cpx(0.5);
+        padding-inline: calc(u.cpx(0.5) - var(--margin, 0px));
         gap: u.cqf(2);
 
         //
@@ -264,6 +241,8 @@
 
         border-radius: u.cqf(0.5);
         font-weight: bolder;
+
+        gap: u.cqf(0.25);
     }
 
     //

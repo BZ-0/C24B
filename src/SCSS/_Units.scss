@@ -19,8 +19,12 @@
 };
 
 //
-@function cpx($count: 1) {
-    @return calc($count * var(--cpx-base, 1rem));
+@function cpx($count: 1, $clamp: true, $mod: 1rem) {
+    @if ($clamp) {
+        @return min(calc($count * var(--cpx-base, $mod)), 100cqi);
+    } @else {
+        @return calc($count * var(--cpx-base, $mod));
+    }
 }
 
 //
@@ -30,9 +34,10 @@
 
 //
 :root, :host, :scope {
+    & { font-size: 16px; };
     & {
         --col-base: 12;
-        --cpx-base: calc(100dvi / var(--col-base));
+        --cpx-base: calc(calc(100dvi + 1rem) / var(--col-base));
         --cqf-base: min(3dvi, 1rem);
     }
 
@@ -43,7 +48,5 @@
     @media (width <= 6in) { --col-base: 4; }
 
     //
-    body {
-        font-size: min(1rem, cpx(0.1));
-    }
+    body { font-size: min(1rem, cqf(1)); }
 }

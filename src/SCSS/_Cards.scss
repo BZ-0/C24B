@@ -21,10 +21,17 @@
 
         //
         & > :where(*) {
-            padding: u.cqf(2);
+            padding: u.cpx(0.25);
 
+            //
+            block-size: auto;
             inline-size: max-content;
-            max-inline-size: 100%;
+
+            //
+            max-inline-size: none;
+            max-block-size: none;
+
+            //
             flex-grow: 1;
             flex-basis: u.cpx(2);
             gap: u.cqf(1);
@@ -38,9 +45,8 @@
             align-self: stretch;
 
             //
-            block-size: auto;
+            min-inline-size: u.cpx(2);
             min-block-size: 100%;
-            max-block-size: none;
 
             //
             /*block-size: stretch;

@@ -5,22 +5,32 @@
 
     //
     .products {
+        --item-count: 3;
+
         display: flex;
 
         //
         flex-direction: row;
         flex-wrap: wrap;
 
-        gap: u.cqf(2);
-        padding: u.cqf(2);
+        //
+        gap: u.cpx(0.25);
+        padding-inline: u.cpx(0.25);
 
-        place-content: center;
-        place-items: center;
+        //
+        padding-block: u.cpx(0.25);
 
-        //justify-content: space-around;
+        //
+        place-content: stretch;
+        place-items: stretch;
 
-        min-block-size: max-content;
+        //
+        justify-content: space-around;
+        justify-items: stretch;
+
+        //min-block-size: max-content;
         inline-size: 100%;
+        block-size: max-content;
 
         //
         @container (width < 12in) {
@@ -46,33 +56,50 @@
         }
 
         //
-        & > :where(*) {
-            max-inline-size: 80%;
-            flex-grow: 0;
+        & > :where(article) {
+            display: flex;
+            flex-grow: 1;
 
             border-radius: u.cqf(1);
-            inline-size: max-content;
 
-            flex-basis: u.cpx(3);
-            min-inline-size: u.cpx(3);
+            flex-basis: min(u.cpx(calc(9 / var(--item-count)), true, 0rem), 100%);
+            inline-size: 100%;
+            min-inline-size: max-content;
+            max-inline-size: 100%;
+            //max-inline-size: u.cpx(calc(10 / var(--item-count)), true, 0rem);
+
+            max-block-size: none;
+            min-block-size: 100%;
+            block-size: max-content;
 
             place-self: center;
         }
 
         .word {
             aspect-ratio: 1 / 1;
-            inline-size: u.cqf(4);
-            block-size: u.cqf(4);
-            flex-basis: u.cqf(4);
-            font-size: u.cqf(2);
+            inline-size: u.cpx(0);
+            max-inline-size: u.cpx(0);
+            block-size: u.cpx(0);
+            flex-basis: u.cpx(0);
+            font-size: u.cpx(0);
             place-content: center;
             place-items: center;
             display: flex;
-            max-inline-size: max-content;
-            min-inline-size: max-content;
             font-weight: bolder;
-
             opacity: 0.8;
+            overflow: visible;
+            place-self: center;
+            position: relative;
+            flex-grow: 1;
+            flex-shrink: 1;
+
+            & > * {
+                position: absolute;
+                inline-size: u.cpx(0.25, false);
+                block-size: u.cpx(0.25, false);
+                max-inline-size: none;
+                max-block-size: none;
+            }
         }
     }
 
