@@ -62,7 +62,7 @@
 
             border-radius: u.cqf(1);
 
-            flex-basis: min(u.cpx(calc(9 / var(--item-count)), true, 0rem), 100%);
+            flex-basis: min(u.cpx(calc(6 / var(--item-count)), true, 0rem), 100%);
             inline-size: 100%;
             min-inline-size: max-content;
             max-inline-size: 100%;
