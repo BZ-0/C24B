@@ -1,18 +1,21 @@
+@use "./Units" as u;
+
+//
 @layer us-navbar {
 
     nav {
         display: flex;
         flex-direction: row;
-        gap: 2rem;
+        gap: u.cqf(2);
 
         min-block-size: max-content;
         place-content: center;
         place-items: center;
 
-        padding-inline: 4rem;
-        padding-block: 0.5rem;
+        padding-inline: u.cqf(4);
+        padding-block: u.cqf(0.5);
 
-        font-size: 1.2rem;
+        font-size: u.cqf(1.2);
 
         position: sticky;
         inset: 0px;
@@ -21,11 +24,11 @@
 
         flex-grow: 1;
 
-        box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px u.cqf(1) rgba(0, 0, 0, 0.1);
 
         //
         .logo {
-            font-size: 2rem;
+            font-size: u.cqf(2);
             font-weight: bolder;
         }
 
@@ -40,12 +43,12 @@
             padding: 0px;
             display: flex;
             flex-direction: row;
-            gap: 2rem;
+            gap: u.cqf(2);
             place-content: center;
             place-items: center;
 
             min-block-size: max-content;
-            font-size: 1rem;
+            font-size: u.cqf(1);
 
             li {
                 margin: 0px;

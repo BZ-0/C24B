@@ -1,0 +1,49 @@
+@property --col-base {
+    initial-value: 12;
+    inherits: true;
+    syntax: "<number>";
+};
+
+//
+@property --cpx-base {
+    initial-value: 1rem;
+    inherits: true;
+    syntax: "<length-percentage>";
+};
+
+//
+@property --cqf-base {
+    initial-value: 1rem;
+    inherits: true;
+    syntax: "<length-percentage>";
+};
+
+//
+@function cpx($count: 1) {
+    @return calc($count * var(--cpx-base, 1rem));
+}
+
+//
+@function cqf($size) {
+    @return calc($size * var(--cqf-base, 1rem));
+}
+
+//
+:root, :host, :scope {
+    & {
+        --col-base: 12;
+        --cpx-base: calc(100dvi / var(--col-base));
+        --cqf-base: min(3dvi, 1rem);
+    }
+
+    //
+    @media (width <= 15in) { --col-base: 10; }
+    @media (width <= 12in) { --col-base: 8; }
+    @media (width <= 9in) { --col-base: 6; }
+    @media (width <= 6in) { --col-base: 4; }
+
+    //
+    body {
+        font-size: min(1rem, cpx(0.1));
+    }
+}

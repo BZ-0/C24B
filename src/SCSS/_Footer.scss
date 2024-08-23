@@ -1,14 +1,17 @@
+@use "./Units" as u;
+
+//
 @layer us-footer {
 
     footer {
         inline-size: 100%;
-        min-block-size: 6rem;
+        min-block-size: u.cqf(6);
         block-size: max-content;
 
-        padding: 2rem;
-        padding-inline: min(6rem, 10cqi);
+        padding: u.cqf(2);
+        padding-inline: min(u.cqf(6), 10cqi);
 
-        box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px u.cqf(1) rgba(0, 0, 0, 0.2);
     }
 
 }

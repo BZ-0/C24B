@@ -1,3 +1,6 @@
+@use "./Units" as u;
+
+//
 @layer us-header {
 
     //
@@ -17,13 +20,13 @@
         place-content: center;
         flex-direction: column;
 
-        padding-inline: 2rem;
-        padding-block: 2rem;
-        gap: 0.5rem;
-        font-size: 1rem;
+        padding-inline: u.cqf(2);
+        padding-block: u.cqf(2);
+        gap: u.cqf(0.5);
+        font-size: u.cqf(1);
         //font-weight: 100;
 
-        padding: 2rem;
+        padding: u.cqf(2);
         flex-grow: 1;
 
         inline-size: 100cqi;

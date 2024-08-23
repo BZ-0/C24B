@@ -1,3 +1,7 @@
+
+
+@use "./Units" as u;
+
 //
 @layer us-website {
 
@@ -46,7 +50,7 @@
         text-align: center;
         flex-direction: column;
         flex-wrap: wrap;
-        gap: 0.5rem;
+        gap: u.cqf(0.5);
     }
 
     //
@@ -60,7 +64,7 @@
         flex-wrap: wrap;
         place-content: space-between;
         place-items: center;
-        gap: 0.5rem;
+        gap: u.cqf(0.5);
         flex-direction: row;
 
         //
@@ -83,7 +87,7 @@
         //
         @container (width < 12in) {
             flex-direction: column;
-            gap: 1rem;
+            gap: u.cqf(1);
         }
     }
 
@@ -95,7 +99,7 @@
     //
     ul, ol {
         font-weight: 300;
-        font-size: 0.8rem;
+        font-size: u.cqf(0.8);
         padding: 0px;
         margin: 0px;
         list-style-position: inside;
@@ -110,7 +114,7 @@
         //
         display: flex;
         flex-direction: row;
-        gap: 0.125rem;
+        gap: u.cqf(0.5);
         place-content: center;
         place-items: center;
 
@@ -122,32 +126,32 @@
 
     //
     h1 {
-        font-size: min(4rem, 12cqmin);
+        font-size: u.cqf(4);
     }
 
     //
     h2 {
-        font-size: min(3.5rem, 9cqmin);
+        font-size: u.cqf(3.5);
     }
 
     //
     h3 {
-        font-size: min(3rem, 7cqmin);
+        font-size: u.cqf(3);
     }
 
     //
     h4 {
-        font-size: min(2.5rem, 5cqmin);
+        font-size: u.cqf(2.5);
     }
 
     //
     h5 {
-        font-size: min(2rem, 4cqmin);
+        font-size: u.cqf(2);
     }
 
     //
     h6 {
-        font-size: min(1.5rem, 3cqmin);
+        font-size: u.cqf(1.5);
     }
 
 
@@ -189,39 +193,38 @@
         inline-size: 1em;
         block-size: 1em;
         display: inline-flex;
-        margin-inline: 0.5rem;
         place-content: center;
         place-items: center;
         aspect-ratio: 1 / 1;
     }
 
     .pad {
-        block-size: 1rem;
+        block-size: u.cqf(1);
         background-color: transparent;
     }
 
     //
     .background {
-        --margin: min(2rem, 4cqi);
+        --margin: #{u.cqf(2)};
 
         //
         inline-size: calc(100% - 2 * var(--margin));
         min-block-size: max-content;
-        padding-block: 2rem;
-        padding-block-start: 4rem;
-        padding-inline: min(4rem, 4cqi);
-        gap: 2rem;
+        padding-block: u.cqf(2);
+        padding-block-start: u.cqf(4);
+        padding-inline: u.cpx(0.5);
+        gap: u.cqf(2);
 
         //
         max-block-size: none;
 
         //
-        margin-block-start: 10rem;
+        margin-block-start: u.cqf(10);
         margin-inline: var(--margin);
-        border-radius: 1rem;
+        border-radius: u.cqf(1);
 
         //
-        box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px u.cqf(2) rgba(0, 0, 0, 0.1);
     }
 
     .content {
@@ -234,7 +237,7 @@
         //
         position: absolute;
         inset: 0px;
-        gap: 2rem;
+        gap: u.cqf(2);
 
         //
         background-color: transparent;
@@ -242,7 +245,7 @@
 
     //
     button {
-        margin-block-start: 1rem;
+        margin-block-start: u.cqf(1);
 
         display: flex;
         text-align: center;
@@ -253,13 +256,13 @@
         block-size: max-content;
         container-type: normal;
 
-        font-size: min(3cqmin, 1rem);
+        font-size: u.cqf(1);
 
         line-height: 1.5;
-        padding-inline: 1rem;
-        padding-block: 0.8rem;
+        padding-inline: u.cqf(1);
+        padding-block: u.cqf(0.8);
 
-        border-radius: 0.5rem;
+        border-radius: u.cqf(0.5);
         font-weight: bolder;
     }
 

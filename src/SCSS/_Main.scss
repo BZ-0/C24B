@@ -1,15 +1,25 @@
+@use "./Units" as u;
+
+//
+@property --right-space {
+    initial-value: 0px;
+    inherits: true;
+    syntax: "<length-percentage>";
+};
+
+//
 @layer us-main {
 
     //
     main {
-        --right-space: 4rem;
+        --right-space: #{u.cqf(2)};
 
         position: relative;
         min-inline-size: max-content;
-        inline-size: min(calc(100% - var(--right-space)), 40rem);
+        inline-size: min(calc(100cqi - var(--right-space)), u.cpx(4));
         block-size: max-content;
 
-        box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px u.cqf(1) rgba(0, 0, 0, 0.1);
 
         display: flex;
         place-items: center;
@@ -24,14 +34,14 @@
         align-self: start;
 
         //
-        padding-inline: 1rem;
-        padding-block: 4rem;
-        padding-inline-end: 4rem;
+        padding-inline: u.cqf(1);
+        padding-block: u.cqf(4);
+        padding-inline-end: u.cqf(4);
 
         margin-inline-end: var(--right-space);
 
-        border-start-end-radius: 1rem;
-        border-end-end-radius: 1rem;
+        border-start-end-radius: u.cqf(1);
+        border-end-end-radius: u.cqf(1);
 
         h1, h2, h3, h4, h5, h6 {
             justify-content: start;
@@ -42,7 +52,7 @@
         }
 
         .info-block {
-            gap: 0.25rem;
+            gap: u.cqf(0.25);
 
             place-items: center;
             place-content: center;
@@ -55,7 +65,7 @@
             min-inline-size: max-content;
 
             align-content: space-between;
-            min-block-size: 16rem;
+            min-block-size: u.cpx(1);
         }
 
         button {
